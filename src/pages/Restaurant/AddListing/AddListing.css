@@ -1,0 +1,201 @@
+.add-listing {
+  padding: 32px 40px;
+  background-color: #f5f0e8;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.al-header {
+  margin-bottom: 32px;
+}
+
+.al-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #2d5016;
+  margin-bottom: 4px;
+}
+
+.al-sub {
+  font-size: 14px;
+  color: #5a6b4a;
+}
+
+/* ── Form Card ── */
+.al-form-wrapper {
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #d8cfbf;
+  padding: 32px;
+  max-width: 860px;
+  margin: 0 auto;        /* ← ده اللي هيتوسطه */
+}
+.al-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Two Column Layout ── */
+.al-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.al-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ── Section Title ── */
+.al-section-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2d5016;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid #eee8da;
+  margin-bottom: 4px;
+}
+
+/* ── Field ── */
+.al-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.al-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d5016;
+}
+
+.al-optional {
+  font-size: 12px;
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.al-input {
+  padding: 13px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #d8cfbf;
+  background-color: #f5f0e8;
+  font-size: 14px;
+  color: #2d5016;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: inherit;
+}
+
+.al-input:focus {
+  border-color: #2d5016;
+  background-color: #ffffff;
+}
+
+.al-input::placeholder {
+  color: #aaa;
+}
+
+.al-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* ── Row ── */
+.al-row {
+  display: flex;
+  gap: 16px;
+}
+
+.al-row .al-field {
+  flex: 1;
+}
+
+/* ── Error ── */
+.al-error {
+  font-size: 12px;
+  color: #c0392b;
+  margin-top: 2px;
+}
+
+/* ── Divider ── */
+.al-divider {
+  height: 1px;
+  background-color: #eee8da;
+}
+
+/* ── Actions ── */
+.al-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.al-btn-primary {
+  padding: 13px 32px;
+  background-color: #2d5016;
+  color: #ffffff;
+  border: none;
+  border-radius: 32px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.al-btn-primary:hover {
+  opacity: 0.88;
+}
+
+.al-btn-secondary {
+  padding: 13px 32px;
+  background-color: #eee8da;
+  color: #2d5016;
+  border: none;
+  border-radius: 32px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.al-btn-secondary:hover {
+  opacity: 0.88;
+}
+
+/* ── Success Screen ── */
+.success-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 16px;
+}
+
+.success-icon {
+  font-size: 64px;
+}
+
+.success-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #2d5016;
+}
+
+.success-sub {
+  font-size: 14px;
+  color: #5a6b4a;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}

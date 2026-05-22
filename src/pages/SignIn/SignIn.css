@@ -1,0 +1,132 @@
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f0e8;
+}
+
+.signin-container {
+    width: 100%;
+    max-width: 380px;
+    background-color: #f5f0e8;
+    padding: 32px 24px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: #2d5016;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #2d5016;
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 4px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #5a6b4a;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+form label {
+    display: block;
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d5016;
+}
+
+form input {
+    width: 100%;
+    padding: 13px 14px;
+    margin-top: 6px;
+    border-radius: 12px;
+    border: 1.5px solid #d8cfbf;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #2d5016;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+form input:focus {
+    border-color: #2d5016;
+}
+
+form input::placeholder {
+    color: #aaa;
+}
+
+/* ── Password Row ── */
+.password-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.password-row label {
+    margin-top: 0;
+}
+
+.forgot {
+    font-size: 12px;
+    color: #3d6b1a;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ── Submit Button ── */
+.signin .btn-primary {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #2d5016;
+    color: #ffffff;
+    border: none;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    text-align: center;
+}
+
+.signin .btn-primary:hover {
+    opacity: 0.88;
+}
+
+/* ── Error ── */
+.error {
+    color: #c0392b;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* ── Footer ── */
+.footer-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #5a6b4a;
+}
+
+.footer-text span {
+    color: #2d5016;
+    cursor: pointer;
+    font-weight: 700;
+}

@@ -1,0 +1,306 @@
+.rest-home {
+  padding: 32px 40px;
+  background-color: #f5f0e8;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.rest-home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.rest-home-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #2d5016;
+  margin-bottom: 4px;
+}
+
+.rest-home-sub {
+  font-size: 14px;
+  color: #5a6b4a;
+}
+
+.add-listing-btn {
+  padding: 12px 24px;
+  background-color: #2d5016;
+  color: #ffffff;
+  border: none;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.add-listing-btn:hover {
+  opacity: 0.88;
+}
+
+/* ── Hero Stats ── */
+.hero-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.hstat-card {
+  flex: 1;
+  background-color: #2d5016;
+  border-radius: 16px;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.hstat-num {
+  font-size: 28px;
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.hstat-lbl {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+/* ── Quick Stats ── */
+.quick-stats {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.qstat-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 16px 12px;
+  text-align: center;
+  border-top: 3px solid;
+  border-left: 0.5px solid #e5e7eb;
+  border-right: 0.5px solid #e5e7eb;
+  border-bottom: 0.5px solid #e5e7eb;
+}
+
+.qstat-icon {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.qstat-val {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.qstat-lbl {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* ── Tab Bar ── */
+.tab-bar-wrap {
+  background-color: #f5f0e8;
+  padding: 0 0 12px;
+  border-bottom: 1px solid #d8cfbf;
+  margin-bottom: 16px;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tab-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8cfbf;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.tab.active {
+  background-color: #2d5016;
+  border-color: #2d5016;
+}
+
+.tab-txt {
+  font-size: 13px;
+  font-weight: 500;
+  color: #5a6b4a;
+}
+
+.tab.active .tab-txt {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.tab-cnt {
+  min-width: 18px;
+  height: 18px;
+  border-radius: 9px;
+  background-color: #eee8da;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #5a6b4a;
+}
+
+.tab.active .tab-cnt {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+}
+
+/* ── Listings ── */
+.listings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listing-card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #d8cfbf;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+
+.listing-card:hover {
+  box-shadow: 0 4px 12px rgba(45, 80, 22, 0.1);
+}
+
+.stripe {
+  width: 4px;
+  flex-shrink: 0;
+}
+
+.lcard-body {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.lcard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.lcard-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  flex: 1;
+}
+
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+
+.sbadge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.sbadge-txt {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.lcard-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.meta-sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+}
+
+.lcard-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.posted-ago {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.claimed-by {
+  font-size: 11px;
+  color: #2e86c1;
+  font-weight: 600;
+}
+
+.awaiting {
+  font-size: 11px;
+  color: #f39c12;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* ── Empty State ── */
+.empty-state {
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.empty-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2d5016;
+  margin-bottom: 8px;
+}
+
+.empty-sub {
+  font-size: 13px;
+  color: #5a6b4a;
+  line-height: 1.6;
+}

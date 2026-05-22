@@ -1,0 +1,70 @@
+.rest-navbar {
+    background-color: #1b4332;
+    padding: 14px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rest-navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.rest-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background-color: #52b788;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 800;
+    color: #ffffff;
+    flex-shrink: 0;
+}
+
+.rest-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 2px;
+}
+
+.rest-location {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.notif-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.notif-dot {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    border: 2px solid #1b4332;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8px;
+    font-weight: 700;
+    color: #ffffff;
+}

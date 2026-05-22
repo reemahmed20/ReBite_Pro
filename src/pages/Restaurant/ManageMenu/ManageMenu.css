@@ -1,0 +1,343 @@
+.manage-menu {
+  padding: 32px 40px;
+  background-color: #f5f0e8;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.mm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.mm-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #2d5016;
+  margin-bottom: 4px;
+}
+
+.mm-sub {
+  font-size: 14px;
+  color: #5a6b4a;
+}
+
+.mm-add-btn {
+  padding: 12px 24px;
+  background-color: #2d5016;
+  color: #ffffff;
+  border: none;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.mm-add-btn:hover {
+  opacity: 0.88;
+}
+
+/* ── Stats ── */
+.mm-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.mm-stat {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid #d8cfbf;
+}
+
+.mm-stat-num {
+  font-size: 28px;
+  font-weight: 900;
+  color: #2d5016;
+}
+
+.mm-stat-lbl {
+  font-size: 12px;
+  color: #5a6b4a;
+  font-weight: 500;
+}
+
+/* ── Table ── */
+.mm-table {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #d8cfbf;
+  overflow: hidden;
+}
+
+.mm-table-header {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.5fr 1.5fr 1.5fr;
+  padding: 14px 20px;
+  background-color: #eee8da;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5a6b4a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.mm-row {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1.5fr 1.5fr 1.5fr;
+  padding: 16px 20px;
+  align-items: center;
+  border-top: 1px solid #f0ebe0;
+  transition: background-color 0.15s;
+}
+
+.mm-row:hover {
+  background-color: #faf8f4;
+}
+
+.mm-item-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.mm-category {
+  font-size: 13px;
+  color: #5a6b4a;
+}
+
+.mm-quantity {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d5016;
+}
+
+/* ── Toggle ── */
+.mm-toggle {
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: none;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.mm-toggle.available {
+  background-color: #eaf9ea;
+  color: #27ae60;
+}
+
+.mm-toggle.unavailable {
+  background-color: #fdedec;
+  color: #e74c3c;
+}
+
+.mm-toggle:hover {
+  opacity: 0.8;
+}
+
+/* ── Actions ── */
+.mm-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.mm-edit-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #d8cfbf;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2d5016;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mm-edit-btn:hover {
+  background-color: #eee8da;
+}
+
+.mm-delete-btn {
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: 1px solid #f1948a;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  color: #e74c3c;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.mm-delete-btn:hover {
+  background-color: #fdedec;
+}
+
+/* ── Modal ── */
+.mm-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  padding: 24px;
+}
+
+.mm-modal {
+  background-color: #f5f0e8;
+  border-radius: 20px;
+  padding: 32px 28px;
+  width: 100%;
+  max-width: 460px;
+}
+
+.mm-modal-title {
+  font-size: 22px;
+  font-weight: 900;
+  color: #2d5016;
+  margin-bottom: 24px;
+}
+
+/* ── Form ── */
+.mm-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mm-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mm-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #2d5016;
+}
+
+.mm-input {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1.5px solid #d8cfbf;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #2d5016;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: inherit;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.mm-input:focus {
+  border-color: #2d5016;
+}
+
+.mm-error {
+  font-size: 12px;
+  color: #c0392b;
+}
+
+.mm-checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mm-checkbox-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2d5016;
+  cursor: pointer;
+}
+
+/* ── Modal Actions ── */
+.mm-modal-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.mm-btn-primary {
+  flex: 1;
+  padding: 13px;
+  background-color: #2d5016;
+  color: #ffffff;
+  border: none;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.mm-btn-primary:hover {
+  opacity: 0.88;
+}
+
+.mm-btn-secondary {
+  flex: 1;
+  padding: 13px;
+  background-color: #eee8da;
+  color: #2d5016;
+  border: none;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.mm-btn-secondary:hover {
+  opacity: 0.88;
+}
+
+.mm-btn-danger {
+  flex: 1;
+  padding: 13px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  border: none;
+  border-radius: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.mm-btn-danger:hover {
+  opacity: 0.88;
+}
+
+/* ── Confirm Modal ── */
+.mm-confirm {
+  text-align: center;
+  max-width: 360px;
+}
+
+.mm-confirm-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+
+.mm-confirm-sub {
+  font-size: 13px;
+  color: #5a6b4a;
+  line-height: 1.7;
+  margin-bottom: 8px;
+}

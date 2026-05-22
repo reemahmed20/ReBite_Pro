@@ -1,0 +1,371 @@
+.charity-home {
+  background-color: #f5f0e8;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.ch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.ch-greet {
+  font-size: 13px;
+  color: #5a6b4a;
+  margin-bottom: 4px;
+}
+
+.ch-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1f3b10;
+}
+
+/* ── Impact Stats ── */
+.ch-impact {
+  display: flex;
+  background-color: #1f3b10;
+  border-radius: 16px;
+  padding: 20px 16px;
+  margin-bottom: 24px;
+}
+
+.ch-impact-item {
+  flex: 1;
+  text-align: center;
+}
+
+.ch-impact-num {
+  font-size: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.ch-impact-lbl {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.ch-impact-sep {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 4px 0;
+}
+
+/* ── Search ── */
+.ch-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1.5px solid #d8cfbf;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  transition: border-color 0.2s;
+}
+
+.ch-search:focus-within {
+  border-color: #1f3b10;
+}
+
+.ch-search-icon {
+  font-size: 16px;
+}
+
+.ch-search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: transparent;
+  font-family: inherit;
+}
+
+.ch-search-input::placeholder {
+  color: #9ca3af;
+}
+
+.ch-search-clear {
+  background: none;
+  border: none;
+  color: #9ca3af;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.ch-search-clear:hover {
+  background-color: #f0ebe0;
+}
+
+/* ── Filters ── */
+.ch-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.ch-pill {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  border: 1px solid #d8cfbf;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5a6b4a;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.ch-pill:hover {
+  border-color: #1f3b10;
+  color: #1f3b10;
+}
+
+.ch-pill.active {
+  background-color: #1f3b10;
+  border-color: #1f3b10;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+/* ── Results Row ── */
+.ch-results-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.ch-results-txt {
+  font-size: 13px;
+  color: #5a6b4a;
+  font-weight: 500;
+}
+
+.ch-sort-txt {
+  font-size: 13px;
+  color: #1f3b10;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ── Grid ── */
+.ch-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 16px;
+}
+
+/* ── Card ── */
+.ch-card {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  border: 1px solid #e5e7eb;
+  transition: box-shadow 0.2s;
+}
+
+.ch-card:hover {
+  box-shadow: 0 4px 16px rgba(31, 59, 16, 0.1);
+}
+
+.ch-card.urgent {
+  border-color: #f5b7b1;
+  background-color: #fffafa;
+}
+
+/* ── Card Header ── */
+.ch-card-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 8px;
+}
+
+.ch-rest-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.ch-avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #d8f3dc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1f3b10;
+  flex-shrink: 0;
+}
+
+.ch-rest-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ch-food-type {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* ── Badge ── */
+.ch-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  border: 1px solid;
+  flex-shrink: 0;
+}
+
+.ch-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.ch-badge-txt {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+/* ── Divider ── */
+.ch-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-bottom: 12px;
+}
+
+/* ── Items ── */
+.ch-items {
+  font-size: 13px;
+  color: #1a1a1a;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* ── Meta ── */
+.ch-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.ch-meta-sep {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+}
+
+.ch-time-urgent {
+  color: #c0392b;
+  font-weight: 700;
+}
+
+/* ── Pickup ── */
+.ch-pickup {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.ch-pickup span {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+/* ── Tags ── */
+.ch-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.ch-tag {
+  padding: 3px 10px;
+  border-radius: 6px;
+  background-color: #d8f3dc;
+  font-size: 11px;
+  font-weight: 600;
+  color: #1f3b10;
+}
+
+/* ── Claim Button ── */
+.ch-claim-btn {
+  width: 100%;
+  padding: 13px;
+  border-radius: 12px;
+  background-color: #1f3b10;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  font-family: inherit;
+}
+
+.ch-claim-btn:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.ch-claim-btn.claimed {
+  background-color: #d8f3dc;
+  color: #1f3b10;
+  cursor: default;
+}
+
+/* ── Empty State ── */
+.ch-empty {
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.ch-empty-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.ch-empty-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f3b10;
+  margin-bottom: 8px;
+}
+
+.ch-empty-sub {
+  font-size: 13px;
+  color: #5a6b4a;
+  line-height: 1.6;
+}

@@ -1,0 +1,202 @@
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f0e8;
+}
+
+.signup-container {
+    width: 100%;
+    max-width: 380px;
+    background-color: #f5f0e8;
+    padding: 32px 24px;
+}
+
+.back-btn {
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: #2d5016;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #2d5016;
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 4px;
+}
+
+.signup-sub {
+    text-align: center;
+    font-size: 13px;
+    color: #5a6b4a;
+    margin-bottom: 24px;
+    line-height: 1.6;
+}
+
+form label {
+    display: block;
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #2d5016;
+}
+
+form input {
+    width: 100%;
+    padding: 13px 14px;
+    margin-top: 6px;
+    border-radius: 12px;
+    border: 1.5px solid #d8cfbf;
+    background-color: #ffffff;
+    font-size: 15px;
+    color: #2d5016;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+form input:focus {
+    border-color: #2d5016;
+}
+
+form input::placeholder {
+    color: #aaa;
+}
+
+/* ── Eye Button ── */
+.input-wrapper {
+    position: relative;
+    margin-top: 6px;
+}
+
+.input-wrapper input {
+    margin-top: 0;
+    padding-right: 42px;
+    width: 100%;
+}
+
+.eye-btn {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+
+/* ── Roles ── */
+.roles {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.role {
+    flex: 1;
+    padding: 12px 8px;
+    border: 1.5px solid #d8cfbf;
+    border-radius: 12px;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5a6b4a;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+.role.active {
+    border: 2px solid #2d5016;
+    background-color: #d4e8c2;
+    color: #2d5016;
+}
+
+/* ── Submit Button ── */
+.signup-btn {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    background-color: #2d5016;
+    color: #ffffff;
+    border: none;
+    border-radius: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.signup-btn:hover {
+    opacity: 0.88;
+}
+
+/* ── Password Strength ── */
+.strength {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.strength-bars {
+    display: flex;
+    gap: 4px;
+}
+
+.strength-bar {
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #d8cfbf;
+}
+
+.strength--weak .strength-bar:nth-child(1) {
+    background-color: #e74c3c;
+}
+
+.strength--medium .strength-bar:nth-child(1),
+.strength--medium .strength-bar:nth-child(2) {
+    background-color: #e67e22;
+}
+
+.strength--strong .strength-bar:nth-child(1),
+.strength--strong .strength-bar:nth-child(2),
+.strength--strong .strength-bar:nth-child(3) {
+    background-color: #2d5016;
+}
+
+.strength-text {
+    font-size: 12px;
+    font-weight: 600;
+    color: #5a6b4a;
+}
+
+/* ── Error ── */
+.error {
+    color: #c0392b;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* ── Footer ── */
+.footer-text {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #5a6b4a;
+}
+
+.footer-text span {
+    color: #2d5016;
+    cursor: pointer;
+    font-weight: 700;
+}

@@ -1,0 +1,499 @@
+.charity-profile {
+    background-color: #f5f0e8;
+    min-height: 100vh;
+}
+
+/* ── Header ── */
+.cp-header {
+    margin-bottom: 32px;
+}
+
+.cp-title {
+    font-size: 28px;
+    font-weight: 900;
+    color: #1f3b10;
+    margin-bottom: 4px;
+}
+
+.cp-sub {
+    font-size: 14px;
+    color: #5a6b4a;
+}
+
+/* ── Layout ── */
+.cp-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+/* ── Left Card ── */
+.cp-left {
+    position: sticky;
+    top: 24px;
+}
+
+.cp-card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #d8cfbf;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.cp-avatar-wrap {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.cp-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #1f3b10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.cp-verified {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #27ae60;
+    border: 2px solid #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.cp-name {
+    font-size: 17px;
+    font-weight: 800;
+    color: #1a1a1a;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.cp-type {
+    font-size: 13px;
+    color: #5a6b4a;
+}
+
+.cp-loc {
+    font-size: 13px;
+    color: #5a6b4a;
+}
+
+.cp-joined {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.cp-edit-btn {
+    width: 100%;
+    padding: 11px;
+    background-color: #eee8da;
+    color: #1f3b10;
+    border: none;
+    border-radius: 32px;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: opacity 0.2s;
+}
+
+.cp-edit-btn:hover {
+    opacity: 0.88;
+}
+
+/* ── Right ── */
+.cp-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.cp-section {
+    margin-bottom: 24px;
+}
+
+.cp-section-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #5a6b4a;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    padding-left: 4px;
+}
+
+/* ── Settings Card ── */
+.cp-settings-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    border: 1px solid #d8cfbf;
+    overflow: hidden;
+}
+
+.cp-setting-row {
+    display: flex;
+    align-items: center;
+    padding: 16px 18px;
+    gap: 14px;
+    border-bottom: 1px solid #f0ebe0;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.cp-setting-row:last-child {
+    border-bottom: none;
+}
+
+.cp-setting-row:hover {
+    background-color: #faf8f4;
+}
+
+.cp-setting-row.no-hover {
+    cursor: default;
+}
+
+.cp-setting-row.no-hover:hover {
+    background-color: transparent;
+}
+
+.cp-setting-row.danger:hover {
+    background-color: #fdedec;
+}
+
+.cp-setting-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #f5f0e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    flex-shrink: 0;
+}
+
+.cp-setting-icon.danger {
+    background-color: #fdedec;
+}
+
+.cp-setting-lbl {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.cp-setting-lbl.danger {
+    color: #c0392b;
+    font-weight: 600;
+}
+
+.cp-setting-val {
+    font-size: 13px;
+    color: #9ca3af;
+}
+
+.cp-setting-chev {
+    font-size: 20px;
+    color: #d1d5db;
+}
+
+/* ── Toggle ── */
+.cp-toggle {
+    width: 48px;
+    height: 26px;
+    border-radius: 13px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+}
+
+.cp-toggle.on {
+    background-color: #1f3b10;
+}
+
+.cp-toggle.off {
+    background-color: #d1d5db;
+}
+
+.cp-thumb {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    top: 2px;
+    transition: left 0.2s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.cp-toggle.on .cp-thumb {
+    left: 24px;
+}
+
+.cp-toggle.off .cp-thumb {
+    left: 2px;
+}
+
+/* ── Version ── */
+.cp-version {
+    text-align: center;
+    font-size: 11px;
+    color: #9ca3af;
+    padding: 8px 0 16px;
+}
+
+/* ── Modal ── */
+.cp-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+    padding: 24px;
+}
+
+.cp-modal {
+    background-color: #f5f0e8;
+    border-radius: 20px;
+    padding: 32px 28px;
+    width: 100%;
+    max-width: 460px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.cp-modal-icon {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.cp-modal-title {
+    font-size: 22px;
+    font-weight: 900;
+    color: #1f3b10;
+    margin-bottom: 20px;
+}
+
+.cp-modal-sub {
+    font-size: 13px;
+    color: #5a6b4a;
+    line-height: 1.7;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.cp-modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.cp-modal-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.cp-modal-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1f3b10;
+}
+
+.cp-modal-input {
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1.5px solid #d8cfbf;
+    background-color: #ffffff;
+    font-size: 14px;
+    color: #1f3b10;
+    outline: none;
+    transition: border-color 0.2s;
+    font-family: inherit;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.cp-modal-input:focus {
+    border-color: #1f3b10;
+}
+
+.cp-modal-error {
+    font-size: 12px;
+    color: #c0392b;
+}
+
+.cp-modal-success {
+    font-size: 13px;
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.cp-modal-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.cp-btn-primary {
+    flex: 1;
+    padding: 13px;
+    background-color: #1f3b10;
+    color: #ffffff;
+    border: none;
+    border-radius: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.cp-btn-primary:hover {
+    opacity: 0.88;
+}
+
+.cp-btn-secondary {
+    flex: 1;
+    padding: 13px;
+    background-color: #eee8da;
+    color: #1f3b10;
+    border: none;
+    border-radius: 32px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.cp-btn-secondary:hover {
+    opacity: 0.88;
+}
+
+.cp-btn-danger {
+    flex: 1;
+    padding: 13px;
+    background-color: #e74c3c;
+    color: #ffffff;
+    border: none;
+    border-radius: 32px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.cp-btn-danger:hover {
+    opacity: 0.88;
+}
+
+/* ── Language ── */
+.cp-language-options {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.cp-language-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1.5px solid #d8cfbf;
+    background-color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: all 0.2s;
+}
+
+.cp-language-option:hover {
+    border-color: #1f3b10;
+}
+
+.cp-language-option.active {
+    border-color: #1f3b10;
+    background-color: #d8f3dc;
+    color: #1f3b10;
+    font-weight: 700;
+}
+
+.cp-lang-check {
+    color: #1f3b10;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* ── FAQ ── */
+.cp-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.cp-faq-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    border: 1px solid #d8cfbf;
+}
+
+.cp-faq-q {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1f3b10;
+    margin-bottom: 6px;
+}
+
+.cp-faq-a {
+    font-size: 13px;
+    color: #5a6b4a;
+    line-height: 1.6;
+}
+
+/* ── Terms ── */
+.cp-terms-content {
+    font-size: 13px;
+    color: #5a6b4a;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cp-terms-content ul {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}

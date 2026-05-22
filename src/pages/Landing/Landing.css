@@ -1,0 +1,291 @@
+/* ── General ── */
+.landing {
+    background-color: #f5f0e8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.landing-navbar-wrapper {
+    width: 100%;
+}
+
+.landing-content {
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+}
+
+/* ── Hero ── */
+.hero {
+    padding: 40px 0 16px;
+    text-align: center;
+    width: 100%;
+    animation: fadeIn 0.8s ease;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 900;
+    color: #2d5016;
+    line-height: 1.2;
+    margin-bottom: 14px;
+    letter-spacing: -1px;
+}
+
+.hero-sub {
+    font-size: 17px;
+    color: #5a6b4a;
+    line-height: 1.7;
+    margin-bottom: 28px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.85;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    padding: 16px;
+    border-radius: 32px;
+    background-color: #2d5016;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 14px rgba(45, 80, 22, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 22px rgba(45, 80, 22, 0.4);
+    opacity: 0.9;
+}
+
+/* ── How It Works ── */
+.hiw-section {
+    width: 100%;
+    padding:  70px 0;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 26px;
+    font-weight: 900;
+    color: #2d5016;
+    margin-bottom: 8px;
+}
+
+.section-sub {
+    font-size: 14px;
+    color: #5a6b4a;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.hiw-timeline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+}
+
+.hiw-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    max-width: 180px;
+}
+
+.hiw-circle {
+    width: 36px;
+    height: 36px;
+    background-color: #2d5016;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.hiw-icon {
+    font-size: 32px;
+}
+
+.hiw-step-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #2d5016;
+    text-align: center;
+}
+
+.hiw-step-desc {
+    font-size: 12px;
+    color: #5a6b4a;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.hiw-line {
+    flex: 0 0 40px;
+    height: 2px;
+    background-color: #2d5016;
+    margin-top: 17px;
+    opacity: 0.3;
+}
+
+/* ── Who Joins ── */
+.who-section {
+    width: 100%;
+    padding: 60px 0;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.who-cards {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 22px;
+    padding: 30px 18px;
+    transition: all 0.25s ease;
+}
+
+
+.who-card {
+    border-radius: 20px;
+    padding: 28px 16px;
+    flex: 1;
+    min-width: 160px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.who-card:hover {
+    transform: translateY(-8px);
+    box-shadow:  0 14px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* لون مختلف لكل كارت */
+.who-card--restaurant {
+    background-color: #d4e8c2;
+}
+
+.who-card--charity {
+    background-color: #2d5016;
+}
+
+.who-card--charity .who-title,
+.who-card--charity .who-desc {
+    color: #ffffff;
+}
+
+.who-card--charity .who-stat {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+.who-card--donor {
+    background-color: #eee8da;
+}
+
+.who-icon {
+    font-size: 40px;
+    margin-bottom: 6px;
+}
+
+.who-title {
+    font-size: 16px;
+    font-weight: 800;
+    color: #2d5016;
+}
+
+.who-desc {
+    font-size: 12px;
+    color: #5a6b4a;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.who-stat {
+    margin-top: 8px;
+    background-color: rgba(45, 80, 22, 0.12);
+    color: #2d5016;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+/* ── Green Card ── */
+.card-wrapper {
+    width: 100vw;
+    padding: 0 24px;
+    box-sizing: border-box;
+    margin-top: 24px;
+}
+
+.card {
+    width: 100%;
+    border-radius: 18px;
+    background-color: #2d5016;
+    padding: 28px;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.card-sub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 2px;
+    margin-top: 4px;
+}
+
+.card-emojis {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 12px;
+}
+

@@ -1,0 +1,39 @@
+/* ── Footer ── */
+.footer {
+    width: 100%;
+    padding: 24px 20px 16px;
+    text-align: center;
+    border-top: 1px solid #e8e0d0;
+    margin-top: 20px;
+    opacity: 0.9;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-brand {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2d5016;
+    margin-bottom: 6px;
+}
+
+.footer-copy {
+    font-size: 11px;
+    color: #5a6b4a;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-link {
+    font-size: 12px;
+    color: #2d5016;
+    font-weight: 500;
+    cursor: pointer;
+}
