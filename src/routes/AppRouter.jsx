@@ -15,7 +15,20 @@ import CharityLayout from "../components/CharityLayout/CharityLayout";
 import CharityHome from "../pages/Charity/CharityHome/CharityHome";
 import ClaimedListings from "../pages/Charity/ClaimedListings/ClaimedListings";
 import CharityProfile from "../pages/Charity/CharityProfile/CharityProfile";
+import CharityNotifications from "../pages/Charity/Notifications/CharityNotifications";
 
+import DonorDashboard from "../pages/Donor/DonorDashboard/DonorDashboard";
+import Donation from "../pages/Donor/Donation/Donation";
+import DonorProfile from "../pages/Donor/DonorProfile/DonorProfile";
+
+import AdminLayout from "../components/AdminLayout/AdminLayout";
+import AdminDashboard from "../pages/Admin/AdminDashboard/AdminDashboard";
+import UsersManagement from "../pages/Admin/UsersManagement/UsersManagement";
+import RegistrationRequests from "../pages/Admin/RegistrationRequests/RegistrationRequests";
+import DonationsMonitoring from "../pages/Admin/DonationsMonitoring/DonationsMonitoring";
+import FoodWasteMonitoring from "../pages/Admin/FoodWasteMonitoring/FoodWasteMonitoring";
+import SystemSettings from "../pages/Admin/SystemSettings/SystemSettings";
+import Reports from "../pages/Admin/Reports/Reports";
 
 function AppRouter() {
     return (
@@ -35,6 +48,28 @@ function AppRouter() {
             <Route path="/charity" element={<CharityLayout><CharityHome /></CharityLayout>} />
             <Route path="/charity/claimed" element={<CharityLayout><ClaimedListings /></CharityLayout>} />
             <Route path="/charity/profile" element={<CharityLayout><CharityProfile /></CharityLayout>} />
+            <Route
+                path="/charity/notifications"
+                element={
+                    <CharityLayout>
+                        <CharityNotifications />
+                    </CharityLayout>
+                }
+            />
+            {/* Donor Routes */}
+
+            <Route path="/donor" element={<DonorDashboard />} />
+            <Route path="/donor/donation" element={<Donation />} />
+            <Route path="/donor/profile" element={<DonorProfile />} />
+
+            {/* Admin Routes */}
+            <Route path="/admin" element={<AdminLayout><AdminDashboard /></AdminLayout>} />
+            <Route path="/admin/users" element={<AdminLayout><UsersManagement /></AdminLayout>} />
+            <Route path="/admin/requests" element={<AdminLayout><RegistrationRequests /></AdminLayout>} />
+            <Route path="/admin/donations" element={<AdminLayout><DonationsMonitoring /></AdminLayout>} />
+            <Route path="/admin/food-waste" element={<AdminLayout><FoodWasteMonitoring /></AdminLayout>} />
+            <Route path="/admin/settings" element={<AdminLayout><SystemSettings /></AdminLayout>} />
+            <Route path="/admin/reports" element={<AdminLayout><Reports /></AdminLayout>} />
         </Routes>
     );
 }

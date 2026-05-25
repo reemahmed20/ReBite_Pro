@@ -1,0 +1,186 @@
+.food-waste-monitoring {
+  background-color: #f5f0e8;
+  min-height: 100vh;
+}
+
+.fw-header {
+  margin-bottom: 24px;
+}
+
+.fw-title {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1f3b10;
+  margin-bottom: 4px;
+}
+
+.fw-sub {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+.fw-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.fw-stat {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #d8cfbf;
+  max-width: 200px;
+}
+
+.fw-stat-num {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1f3b10;
+  margin-bottom: 4px;
+}
+
+.fw-stat-lbl {
+  font-size: 12px;
+  color: #5a6b4a;
+}
+
+.fw-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.fw-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1.5px solid #d8cfbf;
+  border-radius: 12px;
+  padding: 10px 16px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.fw-search:focus-within {
+  border-color: #1f3b10;
+}
+
+.fw-search input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1a1a1a;
+  background: transparent;
+  width: 100%;
+  font-family: inherit;
+}
+
+.fw-select {
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: 1.5px solid #d8cfbf;
+  background-color: #ffffff;
+  font-size: 14px;
+  color: #1a1a1a;
+  outline: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fw-table-wrapper {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #d8cfbf;
+  overflow: hidden;
+}
+
+.fw-table-head {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.2fr 1.2fr 1fr 1fr;
+  padding: 14px 24px;
+  background-color: #eee8da;
+  font-size: 12px;
+  font-weight: 700;
+  color: #5a6b4a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.fw-table-row {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1.2fr 1.2fr 1fr 1fr;
+  padding: 14px 24px;
+  align-items: center;
+  border-top: 1px solid #f0ebe0;
+  transition: background-color 0.15s;
+}
+
+.fw-table-row:hover {
+  background-color: #faf8f4;
+}
+
+.fw-restaurant {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+.fw-food-type {
+  font-size: 13px;
+  color: #5a6b4a;
+}
+
+.fw-date {
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.fw-reason-badge {
+  display: inline-flex;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  background-color: #fef9e7;
+  color: #f39c12;
+}
+
+.fw-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.fw-view-btn {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #d8cfbf;
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  color: #5a6b4a;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.fw-view-btn:hover {
+  background-color: #eee8da;
+}
+
+.fw-table-footer {
+  padding: 14px 24px;
+  font-size: 13px;
+  color: #9ca3af;
+  border-top: 1px solid #f0ebe0;
+}
+
+.fw-empty {
+  padding: 40px;
+  text-align: center;
+  color: #9ca3af;
+  font-size: 14px;
+}
